@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/257d1e9104.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Image/logoo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Enthusiastic Data Engineer</p>
+            <h1>Hi, I'm <span>Sagar Salvi</span><br>From India</h1>
+        </div>
+    </div>
+</div>   
+
+<!----------------------------About------------------------>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Image/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am an enthusiastic data engineer with a passion for transforming complex data into meaningful insights. With 6-months of experience as a data scientist intern, I have honed my analytical skills and developed a strong understanding of machine learning algorithms. I thrive in collaborative environments, bringing confidence, teamwork, and a quick-learning mindset to every project I undertake.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>  
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Cloud Platform</span><br>Amazon Web Services (AWS)</li>
+                        <li><span>Programming/Scripting Language</span><br>Python, SQL And Shell Scripting</li>
+                        <li><span>Database</span><br>MySQL, PostgreSQL</li>
+                        <li><span>Big Data</span><br>Apache Spark, HDFS</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Apr 2022 - Oct 2022</span><br>Data Science Intern at Yess Infotech</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019</span><br>B.Sc(Computer Science) From Pune University</li>
+                        <li><span>2013</span><br>HSC From Maharastra Board</li>
+                        <li><span>2011</span><br>SSC From Maharastra Board</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------Services------------------------>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Data Engineering</h2>
+                <p>Data engineer skilled in machine learning algorithms, dedicated to delivering efficient and scalable solutions while fostering collaboration and teamwork.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-aws"></i>
+                <h2>Cloud Engineer</h2>
+                <p>skilled cloud engineer adept at optimizing infrastructure, automating processes, and ensuring seamless integration, while collaborating effectively with cross-functional teams to drive business growth.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-sharp fa-solid fa-database"></i>
+                <h2>Database Administrator</h2>
+                <p>Offering expert database administration services, managing and optimizing data systems to ensure efficient storage, retrieval, and security of critical information.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!----------------------------Portfolio------------------------>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        
+        <div class="work-list">
+
+            <div class="work">
+                <img src="Image/b.jpg">
+                <div class="layer">
+                   <h3>Banking Analytics Solution</h3>
+                   <p>The Centralized Data Warehouse and ML Solution for Banking Analytics is a project that combines a centralized repository for banking data with machine learning algorithms to enable predictive analysis.</p>
+                    <a href="https://github.com/Sagar-Salvi/Data-Engineering-Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Image/h-s.jpg">
+                <div class="layer">
+                    <h3>Heart Disease Prediction</h3>
+                    <p>Created an innovative heart disease prediction project, leveraging data analysis techniques and predictive modeling to support healthcare professionals in making informed decisions and improving patient outcomes.</p>
+                     <a href="https://github.com/Sagar-Salvi/Machine-Learning-Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                 </div>
+            </div>
+
+            <div class="work">
+                <img src="Image/s.jpeg">
+                <div class="layer">
+                    <h3>Spotify ETL Data Pipeline</h3>
+                    <p>Designed and implemented a robust ETL (Extract, Transform, Load) data pipeline for Spotify, enabling seamless extraction of music streaming data, transformation into meaningful insights, and efficient loading into analytics systems.</p>
+                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                 </div>
+            </div>
+
+        </div>
+
+        <a href="#" class="btn">See more</a>
+
+    </div>
+</div>
+
+<!----------------------------Contact------------------------>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>sagarsalvi23396@gmail.com</p>
+                <p><i class="fa-brands fa-whatsapp"></i>+91-9673513878</p>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sagar-salvi-598281252"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/salvisagar"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.hackerrank.com/sagarsalvi518?hr_r=1"><i class="fa-brands fa-hackerrank"></i></a>
+                    <a href="https://instagram.com/sagarsalvi518"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <a href="Image/R_Sager.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright &copy; Sagar Salvi. All rights reserved. Made With <i class="fa-sharp fa-solid fa-heart"></i></p>
+    </div>
+
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html> 
